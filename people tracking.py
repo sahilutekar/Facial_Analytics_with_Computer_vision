@@ -7,7 +7,7 @@ import imutils
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # Open a video file for processing (you can also use a webcam by changing the line)
-cap = cv2.VideoCapture("C:/Users/sahil/Downloads/Bad Landlording.mp4")
+cap = cv2.VideoCapture("")
 # cap = cv2.VideoCapture(0)
 
 # Initialize a counter to keep track of the number of people detected
@@ -56,8 +56,7 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 
-# Read a reference image for comparison (assuming it's a ground truth image)
-reference_image = cv2.imread("C:/Users/sahil/Desktop/people_counting_withcv/gt.png", cv2.IMREAD_GRAYSCALE)
+
 
 
 
